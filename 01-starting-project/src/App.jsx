@@ -57,10 +57,10 @@ export default function App() {
         <section id='examples'>
           <h2>Example</h2>
           <menu>
-            <TabButton1 onSelect={() => handleSelected('components')}>Components</TabButton1>
-            <TabButton1 onSelect={() => handleSelected('jsx')}>JSX</TabButton1>
-            <TabButton2 onSelect={() => handleSelected('props')}>Props</TabButton2>
-            <TabButton2 onSelect={() => handleSelected('state')}>State</TabButton2>           
+            <TabButton1 isSelected={selectedTopic === 'components'} onSelect={() => handleSelected('components')}>Components</TabButton1>
+            <TabButton1 isSelected={selectedTopic === 'jsx'} onSelect={() => handleSelected('jsx')}>JSX</TabButton1>
+            <TabButton2 isSelected={selectedTopic === 'props'} onSelect={() => handleSelected('props')}>Props</TabButton2>
+            <TabButton2 isSelected={selectedTopic === 'state'} onSelect={() => handleSelected('state')}>State</TabButton2>           
           </menu>
           {tabContent}
             {/* {!selectedTopic ? (<p>Please select a topic.</p>) :
