@@ -34,7 +34,8 @@ export default function App() {
         <section id='core-concepts'>
           <h2>Core Concepts</h2>
           <ul>
-            <CoreConcept1
+            {CORE_CONCEPTS.map((conceptItem) => <CoreConcept2 {...conceptItem}></CoreConcept2>)}
+            {/* <CoreConcept1
               title={CORE_CONCEPTS[0].title}
               description={CORE_CONCEPTS[0].description}
               image={CORE_CONCEPTS[0].image}
@@ -51,7 +52,7 @@ export default function App() {
             />
             <CoreConcept2 
               {...CORE_CONCEPTS[3]}
-            />
+            /> */}
           </ul>
         </section>
         <section id='examples'>
