@@ -43,20 +43,6 @@ button:focus {
   margin-bottom: 1.5rem;
 }
 
-.controls input {
-  
-}
-
-label.invalid {
-  color: #f87171;
-}
-
-input.invalid {
-  color: #ffa3a3;
-  border-color: #f73f3f;
-  background-color: #fed2d2;
-}
-
 .actions {
   display: flex;
   justify-content: flex-end;
