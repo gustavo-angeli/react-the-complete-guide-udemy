@@ -1,3 +1,3 @@
 export default function Button({children, onClick}) {
-  return <button className="mt-1 px-4 py-2 font-semibold uppercase rounded text-stone-900 bg-amber-400 hover:bg-amber-500" onClick={onClick}>{children}</button>
+  return <button className="p-2 font-semibold uppercase rounded text-stone-900 bg-amber-400 hover:bg-amber-500" onClick={onClick}>{children}</button>
 }
