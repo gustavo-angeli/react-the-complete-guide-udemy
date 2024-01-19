@@ -6,7 +6,7 @@ export default function SideBar({ onStartAddProject, projects, onSelectProject, 
             <h2 className="mb-8  font-bold uppercase md:text-xl text-stone-50">Your Projects</h2>
             <Button onClick={onStartAddProject}>+ Add project</Button>
             <ul className='mt-8'>
-                {projects.map(project => {
+                {projects.map((project, index) => {
                     let cssClass = "w-full text-left px-2 py-1 rounded my-1 hover:text-stone-200 hover:bg-stone-800";
 
                     if (project.id === selectedProject) {
@@ -16,9 +16,9 @@ export default function SideBar({ onStartAddProject, projects, onSelectProject, 
                     }
 
                     return (
-                        <li key={project.id}>
-                            <button 
-                                onClick={() => onSelectProject(project.id)} 
+                        <li key={index}>
+                            <button
+                                onClick={() => onSelectProject(index)} 
                                 className={cssClass}
                             >
                                 {project.title}
